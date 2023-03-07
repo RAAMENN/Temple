@@ -5,6 +5,7 @@ import TempleBaseInfo from '@/Temple/TempleBaseInfo'
 import TempleTimeLine from '@/Temple/TempleTimeLine'
 import WorldBaseInfo from '@/World/WorldInfo'
 import TempleDetailInfo from '@/Temple/TempleDetailInfo'
+import OperationPanel from '@/OperationPanel'
 
 function Homepage(): JSX.Element {
   return (
@@ -19,7 +20,7 @@ function Homepage(): JSX.Element {
         <CenterContainer span={14}>
           <Space direction="vertical" size="middle" style={{ display: 'flex' }}>
             <WorldBaseInfo />
-            <OperationContainer>操作区</OperationContainer>
+            <OperationPanel />
           </Space>
         </CenterContainer>
         <RightContainer span={5}>
@@ -41,10 +42,6 @@ const CenterContainer = styled(Col)`
 `
 const RightContainer = styled(Col)`
   background: #2a494b;
-`
-
-const OperationContainer = styled.div`
-  background: #538293;
 `
 
 const TaskBoard = styled.div`
